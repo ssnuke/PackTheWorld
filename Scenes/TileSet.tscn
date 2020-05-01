@@ -1,0 +1,71 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assests/tiles/tilesheet_complete.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 30.6893, 24.5382 )
+
+[node name="TileSet" type="Node2D"]
+
+[node name="Floor1" type="Sprite" parent="."]
+position = Vector2( 469.283, 187.154 )
+scale = Vector2( 0.993836, 1 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64.0186, 191.942, 191.318, 64.1501 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Floor1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor1/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="Floor2" type="Sprite" parent="."]
+position = Vector2( 448.524, 30.817 )
+scale = Vector2( 0.993836, 1 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 318.391, 190.579, 192.649, 65.5403 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Floor2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="Floor3" type="Sprite" parent="."]
+position = Vector2( 160.064, 29.9694 )
+scale = Vector2( 0.993836, 1 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 514.789, 193.239, 62.1915, 47.9181 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Floor3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor3/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="Floor4" type="Sprite" parent="."]
+scale = Vector2( 0.993836, 1 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 256.245, 192.489, 64.3185, 63.4613 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Floor4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor4/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
