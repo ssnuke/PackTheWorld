@@ -1,0 +1,402 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Assests/GUI/btn.png" type="Texture" id=1]
+[ext_resource path="res://Assests/Fonts/scada/Scada-Bold.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assests/Fonts/scada.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Script/MainMenu.gd" type="Script" id=5]
+[ext_resource path="res://Assests/GUI/BackGround.png" type="Texture" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 70
+font_data = ExtResource( 2 )
+
+[node name="MainMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 2.0
+margin_right = 2.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackgroundImage" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BackgroundImage"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TopMargin" type="Label" parent="BackgroundImage/VBoxContainer"]
+margin_right = 1080.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 0, 50 )
+
+[node name="Title" type="Label" parent="BackgroundImage/VBoxContainer"]
+margin_top = 54.0
+margin_right = 1080.0
+margin_bottom = 142.0
+custom_fonts/font = SubResource( 1 )
+text = "Pack The World"
+align = 1
+valign = 1
+uppercase = true
+
+[node name="MarginContainer" type="MarginContainer" parent="BackgroundImage/VBoxContainer"]
+margin_top = 146.0
+margin_right = 1080.0
+margin_bottom = 196.0
+rect_min_size = Vector2( 0, 50 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="BackgroundImage/VBoxContainer"]
+margin_top = 200.0
+margin_right = 1080.0
+margin_bottom = 646.0
+rect_min_size = Vector2( 300, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="LeftMargin" type="Label" parent="BackgroundImage/VBoxContainer/HBoxContainer"]
+margin_right = 357.0
+margin_bottom = 446.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Options" type="VBoxContainer" parent="BackgroundImage/VBoxContainer/HBoxContainer"]
+margin_left = 361.0
+margin_right = 718.0
+margin_bottom = 446.0
+size_flags_horizontal = 3
+custom_constants/separation = 20
+
+[node name="Let\'s Play" type="TextureButton" parent="BackgroundImage/VBoxContainer/HBoxContainer/Options"]
+self_modulate = Color( 0.0862745, 0.454902, 0.92549, 1 )
+margin_right = 357.0
+margin_bottom = 60.0
+rect_min_size = Vector2( 0, 60 )
+size_flags_horizontal = 3
+size_flags_vertical = 5
+texture_normal = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="BackgroundImage/VBoxContainer/HBoxContainer/Options/Let\'s Play"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 3 )
+text = "Let's Play"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Continue" type="TextureButton" parent="BackgroundImage/VBoxContainer/HBoxContainer/Options"]
+visible = false
+margin_top = 80.0
+margin_right = 357.0
+margin_bottom = 140.0
+rect_min_size = Vector2( 0, 60 )
+size_flags_horizontal = 3
+size_flags_vertical = 5
+texture_normal = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="BackgroundImage/VBoxContainer/HBoxContainer/Options/Continue"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 3 )
+text = "Continue"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NewGame" type="TextureButton" parent="BackgroundImage/VBoxContainer/HBoxContainer/Options"]
+visible = false
+margin_top = 80.0
+margin_right = 357.0
+margin_bottom = 140.0
+rect_min_size = Vector2( 0, 60 )
+size_flags_horizontal = 3
+size_flags_vertical = 5
+texture_normal = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="BackgroundImage/VBoxContainer/HBoxContainer/Options/NewGame"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 3 )
+text = "New Game"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="About" type="TextureButton" parent="BackgroundImage/VBoxContainer/HBoxContainer/Options"]
+visible = false
+margin_top = 80.0
+margin_right = 357.0
+margin_bottom = 140.0
+rect_min_size = Vector2( 0, 60 )
+size_flags_horizontal = 3
+size_flags_vertical = 5
+texture_normal = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="BackgroundImage/VBoxContainer/HBoxContainer/Options/About"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 3 )
+text = "About"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Settings" type="TextureButton" parent="BackgroundImage/VBoxContainer/HBoxContainer/Options"]
+margin_top = 80.0
+margin_right = 357.0
+margin_bottom = 140.0
+rect_min_size = Vector2( 0, 60 )
+size_flags_horizontal = 3
+size_flags_vertical = 5
+texture_normal = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="BackgroundImage/VBoxContainer/HBoxContainer/Options/Settings"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 3 )
+text = "Settings"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Close" type="TextureButton" parent="BackgroundImage/VBoxContainer/HBoxContainer/Options"]
+margin_top = 160.0
+margin_right = 357.0
+margin_bottom = 220.0
+rect_min_size = Vector2( 0, 60 )
+size_flags_horizontal = 3
+size_flags_vertical = 5
+texture_normal = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="BackgroundImage/VBoxContainer/HBoxContainer/Options/Close"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 3 )
+text = "Close"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RightMargin" type="Label" parent="BackgroundImage/VBoxContainer/HBoxContainer"]
+margin_left = 722.0
+margin_right = 1080.0
+margin_bottom = 446.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+
+[node name="BottomMargin" type="Label" parent="BackgroundImage/VBoxContainer"]
+margin_top = 650.0
+margin_right = 1080.0
+margin_bottom = 720.0
+rect_min_size = Vector2( 0, 70 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Settings" type="Control" parent="CanvasLayer"]
+visible = false
+margin_left = 277.0
+margin_top = 174.0
+margin_right = 817.0
+margin_bottom = 594.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackgroundImage" type="TextureRect" parent="CanvasLayer/Settings"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Settings/BackgroundImage"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 50.0
+margin_top = 20.0
+margin_right = -50.0
+margin_bottom = -50.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="CanvasLayer/Settings/BackgroundImage/VBoxContainer"]
+margin_right = 440.0
+margin_bottom = 51.0
+custom_fonts/font = ExtResource( 3 )
+text = "Settings"
+align = 1
+valign = 1
+uppercase = true
+
+[node name="Music" type="CheckButton" parent="CanvasLayer/Settings/BackgroundImage/VBoxContainer"]
+margin_top = 55.0
+margin_right = 440.0
+margin_bottom = 114.0
+custom_fonts/font = ExtResource( 3 )
+text = "Music"
+
+[node name="Sound" type="CheckButton" parent="CanvasLayer/Settings/BackgroundImage/VBoxContainer"]
+margin_top = 118.0
+margin_right = 440.0
+margin_bottom = 177.0
+custom_fonts/font = ExtResource( 3 )
+text = "Sound   "
+
+[node name="BackButton1" type="TextureButton" parent="CanvasLayer/Settings/BackgroundImage/VBoxContainer"]
+margin_left = 145.0
+margin_top = 240.0
+margin_right = 295.0
+margin_bottom = 290.0
+rect_min_size = Vector2( 150, 50 )
+size_flags_horizontal = 6
+size_flags_vertical = 6
+texture_normal = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="CanvasLayer/Settings/BackgroundImage/VBoxContainer/BackButton1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 3 )
+text = "Back"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="About" type="Control" parent="CanvasLayer"]
+visible = false
+margin_left = 35.0
+margin_top = 160.0
+margin_right = 1045.0
+margin_bottom = 660.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/About"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 6 )
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/About/TextureRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 20.0
+margin_top = 20.0
+margin_right = -20.0
+margin_bottom = -20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="CanvasLayer/About/TextureRect/VBoxContainer"]
+margin_right = 970.0
+margin_bottom = 51.0
+custom_fonts/font = ExtResource( 3 )
+text = "About"
+align = 1
+valign = 1
+uppercase = true
+
+[node name="Label2" type="Label" parent="CanvasLayer/About/TextureRect/VBoxContainer"]
+margin_top = 55.0
+margin_right = 970.0
+margin_bottom = 376.0
+custom_fonts/font = ExtResource( 3 )
+text = "jnfjdfnjdfnjds
+dfnskdjfns;dd
+dnfsakdjfsdfsk.jfnsdf
+dfsnfj nkjdfnsjdfnsd
+fsknfjsdnfjksf
+jdfnsajdf'sd"
+
+[node name="BackButton2" type="TextureButton" parent="CanvasLayer/About/TextureRect/VBoxContainer"]
+margin_left = 410.0
+margin_top = 395.0
+margin_right = 560.0
+margin_bottom = 445.0
+rect_min_size = Vector2( 150, 50 )
+size_flags_horizontal = 6
+size_flags_vertical = 6
+texture_normal = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="CanvasLayer/About/TextureRect/VBoxContainer/BackButton2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 3 )
+text = "Back"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="BackgroundImage/VBoxContainer/HBoxContainer/Options/Let's Play" to="." method="_on_Lets_Play_pressed"]
+[connection signal="pressed" from="BackgroundImage/VBoxContainer/HBoxContainer/Options/Continue" to="." method="_on_Continue_pressed"]
+[connection signal="pressed" from="BackgroundImage/VBoxContainer/HBoxContainer/Options/NewGame" to="." method="_on_NewGame_pressed"]
+[connection signal="pressed" from="BackgroundImage/VBoxContainer/HBoxContainer/Options/About" to="." method="_on_About_pressed"]
+[connection signal="pressed" from="BackgroundImage/VBoxContainer/HBoxContainer/Options/Settings" to="." method="_on_Settings_pressed"]
+[connection signal="pressed" from="BackgroundImage/VBoxContainer/HBoxContainer/Options/Close" to="." method="_on_Close_pressed"]
+[connection signal="pressed" from="CanvasLayer/Settings/BackgroundImage/VBoxContainer/BackButton1" to="." method="_on_BackButton1_pressed"]
+[connection signal="pressed" from="CanvasLayer/About/TextureRect/VBoxContainer/BackButton2" to="." method="_on_BackButton2_pressed"]
