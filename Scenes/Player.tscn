@@ -48,7 +48,11 @@ script = ExtResource( 2 )
 frames = SubResource( 1 )
 animation = "run"
 <<<<<<< HEAD
+<<<<<<< HEAD
 frame = 4
+=======
+frame = 2
+>>>>>>> a63cbdb1e4d73f1856a5c9de39fa99177a19504f
 =======
 frame = 2
 >>>>>>> a63cbdb1e4d73f1856a5c9de39fa99177a19504f
