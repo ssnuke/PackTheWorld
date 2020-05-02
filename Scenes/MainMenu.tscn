@@ -3,7 +3,7 @@
 [ext_resource path="res://Assests/GUI/btn.png" type="Texture" id=1]
 [ext_resource path="res://Assests/Fonts/scada/Scada-Bold.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Assests/Fonts/scada.tres" type="DynamicFont" id=3]
-[ext_resource path="res://Scenes/MainMenu.gd" type="Script" id=5]
+[ext_resource path="res://Script/MainMenu.gd" type="Script" id=5]
 [ext_resource path="res://Assests/GUI/BackGround.png" type="Texture" id=6]
 
 [sub_resource type="DynamicFont" id=1]
